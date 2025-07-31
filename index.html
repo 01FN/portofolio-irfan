@@ -1,127 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/tooplate-style.css">
-    <title>New Spot HTML Page by Tooplate</title>
-    <!--
-
-    Template 2107 New Spot
-
-	http://www.tooplate.com/view/2107-new-spot
-
-    -->
+    <title>Portofolio | Irfan Dwi Anggoro, S.Kom</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
-
 <body>
-    <div class="tm-container mx-auto">
-        <section class="tm-section tm-section-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="tm-bg-circle-white tm-flex-center-v">
-                            <header class="text-center">
-                                <h1 class="tm-site-title">New SPOT</h1>
-                                <p class="tm-site-subtitle">Free HTML one-page template</p>
-                            </header>
-                            <p>This HTML page features alternating circular spots in a clean and attractive way. You may use this template for any purpose. Photos are from Unsplash website.</p>
-                            <p class="text-center mt-4 mb-0">
-                                <a data-scroll href="#tm-section-2" class="btn tm-btn-secondary">Continue...</a>
-                            </p>
+    <div id="particle-container"></div>
 
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Irfan Dwi Anggoro</a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Profil</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Pengalaman</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Kontak</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="fa-solid fa-times"></i></div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <br><span class="home__greeting">Halo, Saya</span>
+                    <h1 class="home__name">Irfan</h1>
+                    <h3 class="home__education">Antusias di Bidang Teknologi</h3>
+                    <p class="home__description">Selamat datang di dunia digital saya, tempat di mana anda dapat mengenal saya secara singkat.</p>
+                    <a href="#about" class="button"><i class="fa-solid fa-user"></i> Tentang Saya</a>
+                </div>
+
+                <div class="home__handle">
+                    <img src="img/profile.png" alt="Foto Profil Irfan" class="home__img">
+                </div>
+                
+                <div class="home__social">
+                    <a href="#" target="_blank" class="home__social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" class="home__social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank" class="home__social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section container" id="about">
+            <h2 class="section__title">Profil</h2>
+            <div class="about__container grid">
+                <div class="about__img-container">
+                    <div class="skills__content">
+                        <img src="img/profile-2.jpg" alt="" class="about__img">
                         </div>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="tm-section-2" class="tm-section pt-2 pb-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-lg-6 tm-flex-center-v tm-text-container tm-section-left">
-                        <h2 class="tm-color-secondary mb-4">Lorem ipsum dolor site</h2>
-                        <p class="mb-4">Nullam erat dolor, ullamcorper et nisi nec, porta portitor nisi. Quisque lobortis sem ut facilisis
-                            mattis. Sed eu pellentesque sapien, a finibus eros. Nunc ut ultricies augue.</p>
-                        <p class="mb-5">Mauris sagittis dui arcu, sed luctus metus faucibus nec. Sed vulputate ipsum massa, ut dapibus purus
-                            volutpat vel. Interdum et malesuada fames ac ante.</p>
-                        <p class="text-right mb-0">
-                            <a href="#tm-section-3" class="btn tm-btn-secondary">Continue...</a>
-                        </p>
-                    </div>
-                    <div class="col-xl-7 col-lg-6 tm-circle-img-container">
-                        <img src="img/img-01.jpg" alt="Image" class="rounded-circle tm-circle-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="tm-section-3" class="tm-section tm-section-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 tm-section-2-right">
-                        <div class="tm-bg-circle-white tm-bg-circle-pad-2 tm-flex-center-v">
-                            <header>
-                                <h2 class="tm-color-primary">Duis vel vaius eros</h2>
-                            </header>
-                            <p>In hac habitasse platea dictumst. Ut tristique, purus vitae egestas hendrerit, tellus elit luctus
-                                lacus
-                            </p>
-                            <ul class="dashed">
-                                <li>Quisque lobortis sem ut facilisis mattis</li>
-                                <li>Sed eu pellentesque sapien</li>
-                                <li>Mauris sagittis dui arcu</li>
-                                <li>Sed luctus metus faucibus nec</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="tm-section pt-2 pb-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 tm-flex-center-v tm-section-left">
-                        <form action="#" class="tm-contact-form" method="POST">
-                            <div class="form-group mb-4">
-                                <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name" required/>
-                            </div>
-                            <div class="form-group mb-4">
-                                <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required/>
-                            </div>
-                            <div class="form-group mb-5">
-                                <textarea rows="5" id="contact_message" name="contact_message" class="form-control" placeholder="Message..." required></textarea>
-                            </div>
-                            <div class="form-group mb-0 text-right">
-                                <button type="submit" class="btn tm-btn-primary tm-send-btn">Send</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-xl-8 col-lg-8 tm-circle-img-container tm-contact-right">
-                        <img src="img/img-02.jpg" alt="Image" class="rounded-circle tm-circle-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="small mb-4 tm-footer-text">Copyright &copy; 2018 Company Name 
+                <div class="about__data">
                     
-                    | Design: <a rel="nofollow" href="https://www.tooplate.com" class="tm-footer-link">Tooplate</a>
-                    </p>
+                    <div class="skills__content">
+                        <h3 class="about__heading">Siapa Saya?</h3><br>
+                        <p class="about__description">
+                        Saya adalah pribadi yang bertanggung jawab, dapat dipercaya, dan cepat beradaptasi. Memiliki antusiasme tinggi terhadap dunia teknologi dan perkembangan digital, saya senang mengeksplorasi cara kerja perangkat lunak serta elektronik modern. Dengan kemampuan belajar yang cepat, saya mampu mengoperasikan berbagai teknologi dengan efisien dan tepat guna.
+                    </p></div>
+                    <br><br>
+                    <a href="#contact" class="button"><i class="fa-solid fa-paper-plane"></i> Hubungi Saya</a>
                 </div>
             </div>
-        </footer>
-    </div>
-    <script src="js/smooth-scroll.polyfills.min.js"></script>
-    <!-- https://github.com/cferdinandi/smooth-scroll -->
+        </section>
+
+        <section class="skills section container" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <div class="skills__container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title"><i class="fa-solid fa-brain"></i> Soft Skills</h3>
+                    <div class="skills__list">
+                        <span><i class="fa-solid fa-check-circle"></i> Komunikasi</span>
+                        <span><i class="fa-solid fa-check-circle"></i> Berpikir Kritis</span>
+                        <span><i class="fa-solid fa-check-circle"></i> Problem Solving</span>
+                        <span><i class="fa-solid fa-check-circle"></i> Adaptif</span>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <h3 class="skills__title"><i class="fa-solid fa-code"></i> Technical Skills</h3>
+                    <div class="skills__list">
+                        <span><i class="fa-solid fa-check-circle"></i> Microsoft Office</span>
+                        <span><i class="fa-solid fa-check-circle"></i> HTML & CSS</span>
+                        <span><i class="fa-solid fa-check-circle"></i> Dasar JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience section container" id="experience">
+            <h2 class="section__title">Pengalaman & Pendidikan</h2>
+            <div class="qualification__container grid">
+                <div class="qualification__content">
+                    <h3 class="qualification__title"><i class="fa-solid fa-briefcase"></i> Pengalaman</h3>
+                    <div class="qualification__timeline">
+                        <div class="qualification__item">
+                            <h4 class="qualification__role">Siswa Magang</h4>
+                            <p class="qualification__company">CU BIMA Batu Buil</p>
+                            <span class="qualification__period"><i class="fa-solid fa-calendar-alt"></i> 2019</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualification__content">
+                    <h3 class="qualification__title"><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h3>
+                    <div class="qualification__timeline">
+                        <div class="qualification__item">
+                            <h4 class="qualification__role">Sistem Informasi (S1)</h4>
+                            <p class="qualification__company">Universitas Widya Dharma Pontianak</p>
+                        </div>
+                        <div class="qualification__item">
+                            <h4 class="qualification__role">SMK</h4>
+                            <p class="qualification__company">SMK Negeri 1 Belimbing</p>
+                            <span class="qualification__period"><i class="fa-solid fa-calendar-alt"></i> 2017 - 2020</span>
+                        </div>
+                        <div class="qualification__item">
+                            <h4 class="qualification__role">SMP</h4>
+                            <p class="qualification__company">SMP Negeri 1 Belimbing</p>
+                            <span class="qualification__period"><i class="fa-solid fa-calendar-alt"></i> 2014 - 2017</span>
+                        </div>
+                        <div class="qualification__item">
+                            <h4 class="qualification__role">SD</h4>
+                            <p class="qualification__company">SD Negeri 2 Batu Buil</p>
+                            <span class="qualification__period"><i class="fa-solid fa-calendar-alt"></i> 2008 - 2014</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education" style="display: none;"></section>
+
+        <section class="contact section container" id="contact">
+            <h2 class="section__title">Hubungi Saya</h2>
+            <p class="contact__description">Saya selalu terbuka untuk diskusi, kolaborasi, atau peluang baru. Jangan ragu untuk menghubungi saya.</p>
+            <div class="contact__container grid">
+                <a href="mailto:akunkuliahirfan@gmail.com" class="contact__card">
+                    <i class="fa-solid fa-envelope-open-text contact__card-icon"></i>
+                    <h3 class="contact__card-title">Email</h3>
+                    <span class="contact__card-data">akunkuliahirfan@gmail.com</span>
+                </a>
+                 <a href="https://wa.me/6282256745969" target="_blank" class="contact__card">
+                    <i class="fa-brands fa-whatsapp contact__card-icon"></i>
+                    <h3 class="contact__card-title">WhatsApp</h3>
+                    <span class="contact__card-data">+62 822-5674-5969</span>
+                </a>
+                 <div class="contact__card">
+                    <i class="fa-solid fa-map-marker-alt contact__card-icon"></i>
+                    <h3 class="contact__card-title">Alamat</h3>
+                    <span class="contact__card-data">Pontianak, Indonesia</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copy">&copy; 2025 Irfan Dwi Anggoro. Dibuat dengan <i class="fa-solid fa-heart"></i> dan <i class="fa-solid fa-mug-hot"></i>.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    
     <script>
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            easing: 'easeInOutQuart',
-            speed: 800
-        });
-    </script>
+    /* ===== SCRIPT PARTIKEL ===== */
+    function createParticles() {
+        const container = document.getElementById('particle-container');
+        if (!container) return;
+        const particleCount = 40;
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+            particle.style.animationDuration = `${Math.random() * 15 + 10}s`;
+            particle.style.animationDelay = `${Math.random() * 5}s`;
+            container.appendChild(particle);
+        }
+    }
+    createParticles();
+
+    /* ===== SCRIPT MENU MOBILE ===== */
+    const navMenu = document.getElementById('nav-menu'),
+          navToggle = document.getElementById('nav-toggle'),
+          navClose = document.getElementById('nav-close');
+    
+    if(navToggle) navToggle.addEventListener('click', () => navMenu.classList.add('show-menu'));
+    if(navClose) navClose.addEventListener('click', () => navMenu.classList.remove('show-menu'));
+
+    const navLink = document.querySelectorAll('.nav__link');
+    navLink.forEach(n => n.addEventListener('click', () => navMenu.classList.remove('show-menu')));
+
+    /* ===== SCRIPT HEADER & ACTIVE LINK ===== */
+    const header = document.getElementById('header');
+    const sections = document.querySelectorAll('section[id]');
+    
+    function scrollActions() {
+        if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header');
+        
+        const scrollY = window.pageYOffset;
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight,
+                  sectionTop = current.offsetTop - 58,
+                  sectionId = current.getAttribute('id');
+            
+            let link = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+            if(link){
+                if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                    link.classList.add('active-link');
+                } else {
+                    link.classList.remove('active-link');
+                }
+            }
+        })
+    }
+    window.addEventListener('scroll', scrollActions);
+
+    /* ================================================== */
+    /* ===== ANIMASI KEMUNCULAN (SCROLL REVEAL) BARU ===== */
+    /* ================================================== */
+    const sr = ScrollReveal({
+        origin: 'top',      // Arah datang animasi (top, bottom, left, right)
+        distance: '60px',   // Jarak elemen bergerak
+        duration: 2000,     // Durasi animasi dalam milidetik
+        delay: 300,         // Delay sebelum animasi dimulai
+        // reset: true      // Hapus komentar ini jika ingin animasi berulang setiap kali scroll
+    });
+
+    // Mengatur animasi untuk setiap elemen
+    sr.reveal(`.home__data, .about__img-container, .contact__description`);
+    sr.reveal(`.home__handle, .about__data`, {origin: 'bottom'});
+    sr.reveal(`.home__social`, {origin: 'left', delay: 600});
+    sr.reveal(`.skills__content, .qualification__content, .contact__card`, {interval: 100}); // Efek berurutan
+
+</script>
+
 </body>
 </html>
