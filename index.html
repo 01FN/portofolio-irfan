@@ -4,167 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio | Irfan Dwi Anggoro</title>
-    
-    <link rel="stylesheet" href="css/style.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-</head>
     
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
 <body>
-    <div id="particle-container"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="animated-grid-background"></div>
 
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">Irfan Dwi Anggoro</a>
-            
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">Profil</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#experience" class="nav__link">Pengalaman</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Kontak</a></li>
-                </ul>
-                <div class="nav__close" id="nav-close"><i class="fa-solid fa-times"></i></div>
-            </div>
-
             <div class="nav__toggle" id="nav-toggle"><i class="fa-solid fa-bars"></i></div>
         </nav>
     </header>
 
-    <main class="main">
-        <section class="home" id="home">
-            
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <br><span class="home__greeting">Halo, Saya</span>
-                    <h1 class="home__name">Irfan</h1>
-                    <h3 class="home__education">Antusias di Bidang Teknologi</h3>
-                    <p class="home__description">Selamat datang di dunia digital saya, tempat di mana anda dapat mengenal saya secara singkat.</p>
-                    <a href="#about" class="button"><i class="fa-solid fa-user"></i> Tentang Saya</a>
-                </div>
+    <div class="nav__menu" id="nav-menu">
+        <div class="nav__close" id="nav-close"><i class="fa-solid fa-times"></i></div>
+        <ul class="nav__list">
+            <li class="nav__item"><a style="text-decoration: none;" href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a style="text-decoration: none;" href="#about" class="nav__link">Profil</a></li>
+            <li class="nav__item"><a style="text-decoration: none;" href="#skills" class="nav__link">Keahlian</a></li>
+            <li class="nav__item"><a style="text-decoration: none;" href="#experience" class="nav__link">Perjalanan</a></li>
+            <li class="nav__item"><a style="text-decoration: none;" href="#gallery" class="nav__link">Galeri</a></li>
+            <li class="nav__item"><a style="text-decoration: none;" href="#contact" class="nav__link">Kontak</a></li>
+        </ul>
+    </div>
 
-                <div class="home__handle">
-                    <img src="img/profile.png" alt="Foto Profil Irfan" class="home__img">
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data"><br><br>
+                    <span class="home__greeting reveal-text">Halo, Saya Irfan Dwi Anggoro</span>
+                    <h1 class="home__name shiny-text">Antusias Teknologi</h1>
+                    <p class="home__description reveal-text">Selamat datang di dunia digital saya, tempat di mana anda dapat mengenal saya secara singkat.</p>
+                    <a href="#about" class="button button--ghost reveal-text">Mulai Jelajah <i class="fa-solid fa-arrow-down"></i></a><br>
                 </div>
-                
-                <div class="home__social">
-                    
+                <div class="home__handle reveal-text"><div class="home__img-bg"></div><img src="img/profile.jpg" alt="Foto Profil Irfan" class="home__img"></div>
+                <div class="home__social reveal-text">
                     <a href="https://github.com/01FN" target="_blank" class="home__social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.instagram.com/irfan.dwianggoro?igsh=Z2VoNXMxOTY4amR2" target="_blank" class="home__social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </section>
 
-        <section class="about section container" id="about">
-            <h2 class="section__title">Profil</h2>
-            <div class="about__container grid">
-                <div class="about__img-container">
-                    <div class="skills__content">
-                        <img src="img/profile-2.jpg" alt="" class="about__img">
-                        </div>
-                </div>
-                <div class="about__data">
-                    
-                    <div class="skills__content">
-                        <h3 class="about__heading">Siapa Saya?</h3><br>
-                        <p class="about__description">
-                        Saya adalah pribadi yang bertanggung jawab, dapat dipercaya, dan cepat beradaptasi. Memiliki antusiasme tinggi terhadap dunia teknologi dan perkembangan digital, saya senang mengeksplorasi cara kerja perangkat lunak serta elektronik modern. Dengan kemampuan belajar yang cepat, saya mampu mengoperasikan berbagai teknologi dengan efisien dan tepat guna.
-                    </p></div>
-                    <br><br>
-                    <a href="#contact" class="button"><i class="fa-solid fa-paper-plane"></i> Hubungi Saya</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills section container" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <div class="skills__container grid">
-                <div class="skills__content">
-                    <h3 class="skills__title"><i class="fa-solid fa-brain"></i> Soft Skills</h3>
-                    <div class="skills__list">
-                        <span><i class="fa-solid fa-check-circle"></i> Verbal & Written Communication</span>
-                        <span><i class="fa-solid fa-check-circle"></i> Critical & Logical Thinking</span>
-                        <span><i class="fa-solid fa-check-circle"></i> Problem Solving</span>
-                        <span><i class="fa-solid fa-check-circle"></i> Adaptive</span>
-                    </div>
-                </div>
-                <div class="skills__content">
-                    <h3 class="skills__title"><i class="fa-solid fa-code"></i> Technical Skills</h3>
-                    <div class="skills__list">
-                        <span><i class="fa-solid fa-check-circle"></i> Microsoft Office</span>
-                        <span><i class="fa-solid fa-check-circle"></i> Database Designer</i></span>
-                        <span><i class="fa-solid fa-check-circle"></i> Basic Web Development</span>
-                        <span><i class="fa-solid fa-check-circle"></i> Basic Desktop Software Development</span>
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title reveal-text">Profil Saya</h2>
+                <div class="about__container grid">
+                    <div class="about__img-container reveal-text"><img src="img/profile-2.jpg" alt="Foto Irfan" class="about__img"></div>
+                    <div class="about__data reveal-text">
+                        <h3 class="about__heading">Siapa Saya?</h3>
+                        <p class="about__description">Saya adalah pribadi yang bertanggung jawab, dapat dipercaya, dan cepat beradaptasi. Memiliki antusiasme tinggi terhadap dunia teknologi dan perkembangan digital, saya senang mengeksplorasi cara kerja perangkat lunak serta perangkat elektronik modern. Dengan kemampuan belajar yang cepat, saya mampu mengoperasikan berbagai teknologi dengan efisien dan tepat guna.</p>
+                        <a href="#contact" class="button"><i class="fa-solid fa-paper-plane"></i> Hubungi Saya</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="experience section container" id="experience">
-            <h2 class="section__title">Pengalaman & Pendidikan</h2>
-            <div class="qualification__container grid">
-                <div class="qualification__content">
-                    <h3 class="qualification__title"><i class="fa-solid fa-briefcase"></i> Pengalaman</h3>
-                    <div class="qualification__timeline">
-                        <div class="qualification__item">
-                            <h4 class="qualification__role">Siswa Magang</h4>
-                            <p class="qualification__company">CU BIMA Batu Buil</p>
-                            <span class="qualification__period"><i class="fa-solid fa-calendar-alt"></i> 2019</span>
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title reveal-text">Keahlian</h2>
+                <div class="skills__container grid">
+                    <div class="interactive-card reveal-text">
+                        <div class="interactive-card__content">
+                            <i class="fa-solid fa-brain skills__icon"></i>
+                            <h3 class="skills__title">Soft Skills</h3>
+                            <p class="skills__description">Komunikasi, berpikir kritis & logis, pemecahan masalah, dan adaptif.</p>
                         </div>
                     </div>
-                </div>
-                <div class="qualification__content">
-                    <h3 class="qualification__title"><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h3>
-                    <div class="qualification__timeline">
-                        <div class="qualification__item">
-                            <h4 class="qualification__role">Sistem Informasi (S1)</h4>
-                            <p class="qualification__company">Universitas Widya Dharma Pontianak</p>
-                        </div>
-                        <div class="qualification__item">
-                            <h4 class="qualification__role">SMK</h4>
-                            <p class="qualification__company">SMK Negeri 1 Belimbing</p>
-                            <span class="qualification__period"><i class="fa-solid fa-calendar-alt"></i> 2017 - 2020</span>
-                        </div>
-                        <div class="qualification__item">
-                            <h4 class="qualification__role">SMP</h4>
-                            <p class="qualification__company">SMP Negeri 1 Belimbing</p>
-                            <span class="qualification__period"><i class="fa-solid fa-calendar-alt"></i> 2014 - 2017</span>
-                        </div>
-                        <div class="qualification__item">
-                            <h4 class="qualification__role">SD</h4>
-                            <p class="qualification__company">SD Negeri 2 Batu Buil</p>
-                            <span class="qualification__period"><i class="fa-solid fa-calendar-alt"></i> 2008 - 2014</span>
+                    <div class="interactive-card reveal-text">
+                         <div class="interactive-card__content">
+                            <i class="fa-solid fa-code skills__icon"></i>
+                            <h3 class="skills__title">Technical Skills</h3>
+                            <p class="skills__description">Microsoft Office, desain database, dasar pengembangan web dan desktop.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="education" style="display: none;"></section>
 
-        <section class="contact section container" id="contact">
-            <h2 class="section__title">Hubungi Saya</h2>
-            <p class="contact__description">Saya selalu terbuka untuk diskusi, kolaborasi, atau peluang baru. Jangan ragu untuk menghubungi saya.</p>
-            <div class="contact__container grid">
-                <a href="mailto:akunkuliahirfan@gmail.com" class="contact__card">
-                    <i class="fa-solid fa-envelope-open-text contact__card-icon"></i>
-                    <h3 class="contact__card-title">Email</h3>
-                    <span class="contact__card-data">akunkuliahirfan@gmail.com</span>
-                </a>
-                 <a href="https://wa.me/6282256745969" target="_blank" class="contact__card">
-                    <i class="fa-brands fa-whatsapp contact__card-icon"></i>
-                    <h3 class="contact__card-title">WhatsApp</h3>
-                    <span class="contact__card-data">+62 822-5674-5969</span>
-                </a>
-                 <div class="contact__card">
-                    <i class="fa-solid fa-map-marker-alt contact__card-icon"></i>
-                    <h3 class="contact__card-title">Alamat</h3>
-                    <span class="contact__card-data">Pontianak, Indonesia</span>
+        <section class="experience section" id="experience">
+            <div class="container">
+                <h2 class="section__title reveal-text">Perjalanan Saya</h2>
+                <div class="experience__container grid">
+                    <div class="experience__content reveal-text">
+                        <h3 class="experience__area-title"><i class="fa-solid fa-graduation-cap"></i> Riwayat Pendidikan</h3><br>
+                        <div class="experience__timeline">
+                            <div class="experience__item"><h4 class="experience__role">Sistem Informasi (S1)</h4><p class="experience__company">Universitas Widya Dharma Pontianak</p></div>
+                            <div class="experience__item"><h4 class="experience__role">SMK Negeri 1 Belimbing</h4><p class="experience__company">2017 - 2020</p></div>
+                            <div class="experience__item"><h4 class="experience__role">SMP Negeri 1 Belimbing</h4><p class="experience__company">2014 - 2017</p></div>
+                            <div class="experience__item"><h4 class="experience__role">SD Negeri 2 Batu Buil</h4><p class="experience__company">2008 - 2014</p></div>
+                        
+                        </div>
+                    </div>
+                    <div class="experience__content reveal-text">
+                        <h3 class="experience__area-title"><i class="fa-solid fa-briefcase"></i> Riwayat Pengalaman</h3><br>
+                        <div class="experience__timeline">
+                            <div class="experience__item"><h4 class="experience__role">Siswa Magang</h4><p class="experience__company">CU BIMA Batu Buil</p><span class="experience__period">2019</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery section" id="gallery">
+            <div class="container"><h2 class="section__title reveal-text">Galeri</h2></div>
+            <div class="gallery__carousel">
+                <div class="gallery__track">
+                    <div class="gallery__card" style="background-image: url('img/g1.jpg');"></div>
+                    <div class="gallery__card" style="background-image: url('img/g2.jpg');"></div>
+                    <div class="gallery__card" style="background-image: url('img/g3.jpg');"></div>
+                    <div class="gallery__card" style="background-image: url('img/g4.jpg');"></div>
+                    <div class="gallery__card" style="background-image: url('img/g5.jpg');"></div>
+                    <div class="gallery__card" style="background-image: url('img/g6.jpg');"></div>
+                    <div class="gallery__card" style="background-image: url('img/g7.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title reveal-text">Mari Terhubung</h2>
+                <p style="text-align: center;" class="contact__description reveal-text">Saya selalu terbuka untuk diskusi, kolaborasi, atau peluang baru. Jangan ragu untuk mengirim pesan.</p><br><br>
+                <div class="contact__container grid">
+                    <a style="text-decoration: none; color: rgb(196, 194, 194);" href="mailto:akunkuliahirfan@gmail.com" class="interactive-card reveal-text">
+                        <div class="interactive-card__content"><i class="fa-solid fa-envelope-open-text contact__icon"></i><h3 class="contact__title">Email</h3><span class="contact__data">akunkuliahirfan@gmail.com</span></div>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(196, 194, 194);" href="https://wa.me/6282256745969" target="_blank" class="interactive-card reveal-text">
+                        <div class="interactive-card__content"><i class="fa-brands fa-whatsapp contact__icon"></i><h3 class="contact__title">WhatsApp</h3><span class="contact__data">+62 822-5674-5969</span></div>
+                    </a>
+                    <div style="text-decoration: none; color: rgb(196, 194, 194);" class="interactive-card reveal-text">
+                        <div class="interactive-card__content"><i class="fa-solid fa-map-marker-alt contact__icon"></i><h3 class="contact__title">Alamat</h3><span class="contact__data">Pontianak, Indonesia</span></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -172,85 +151,10 @@
 
     <footer class="footer">
         <div class="footer__container container">
-            <p class="footer__copy">&copy; 2025 Irfan Dwi Anggoro. Dibuat dengan <i class="fa-solid fa-heart"></i> dan <i class="fa-solid fa-mug-hot"></i>.</p>
+            <p class="footer__copy">&copy; 2025 Irfan Dwi Anggoro. Didesain dengan <i class="fa-solid fa-heart"></i> dan <i class="fa-solid fa-code"></i>.</p>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    
-    <script>
-    /* ===== SCRIPT PARTIKEL ===== */
-    function createParticles() {
-        const container = document.getElementById('particle-container');
-        if (!container) return;
-        const particleCount = 40;
-        for (let i = 0; i < particleCount; i++) {
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
-            particle.style.left = `${Math.random() * 100}%`;
-            particle.style.top = `${Math.random() * 100}%`;
-            particle.style.animationDuration = `${Math.random() * 15 + 10}s`;
-            particle.style.animationDelay = `${Math.random() * 5}s`;
-            container.appendChild(particle);
-        }
-    }
-    createParticles();
-
-    /* ===== SCRIPT MENU MOBILE ===== */
-    const navMenu = document.getElementById('nav-menu'),
-          navToggle = document.getElementById('nav-toggle'),
-          navClose = document.getElementById('nav-close');
-    
-    if(navToggle) navToggle.addEventListener('click', () => navMenu.classList.add('show-menu'));
-    if(navClose) navClose.addEventListener('click', () => navMenu.classList.remove('show-menu'));
-
-    const navLink = document.querySelectorAll('.nav__link');
-    navLink.forEach(n => n.addEventListener('click', () => navMenu.classList.remove('show-menu')));
-
-    /* ===== SCRIPT HEADER & ACTIVE LINK ===== */
-    const header = document.getElementById('header');
-    const sections = document.querySelectorAll('section[id]');
-    
-    function scrollActions() {
-        if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header');
-        
-        const scrollY = window.pageYOffset;
-        sections.forEach(current => {
-            const sectionHeight = current.offsetHeight,
-                  sectionTop = current.offsetTop - 58,
-                  sectionId = current.getAttribute('id');
-            
-            let link = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
-            if(link){
-                if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-                    link.classList.add('active-link');
-                } else {
-                    link.classList.remove('active-link');
-                }
-            }
-        })
-    }
-    window.addEventListener('scroll', scrollActions);
-
-    /* ================================================== */
-    /* ===== ANIMASI KEMUNCULAN (SCROLL REVEAL) BARU ===== */
-    /* ================================================== */
-    const sr = ScrollReveal({
-        origin: 'top',      // Arah datang animasi (top, bottom, left, right)
-        distance: '60px',   // Jarak elemen bergerak
-        duration: 2000,     // Durasi animasi dalam milidetik
-        delay: 300,         // Delay sebelum animasi dimulai
-        // reset: true      // Hapus komentar ini jika ingin animasi berulang setiap kali scroll
-    });
-
-    // Mengatur animasi untuk setiap elemen
-    sr.reveal(`.home__data, .about__img-container, .contact__description`);
-    sr.reveal(`.home__handle, .about__data`, {origin: 'bottom'});
-    sr.reveal(`.home__social`, {origin: 'left', delay: 600});
-    sr.reveal(`.skills__content, .qualification__content, .contact__card`, {interval: 100}); // Efek berurutan
-
-</script>
-
+    <script src="js/main.js"></script>
 </body>
 </html>
